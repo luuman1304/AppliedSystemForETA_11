@@ -1,0 +1,224 @@
+{
+  "schemaVersion": "1.0.0",
+  "generatedAt": "2026-11-19T10:20:09.556Z",
+  "provenance": {
+    "mode": "read-only research snapshot",
+    "sources": [
+      {
+        "name": "analysis",
+        "path": "research_inputs/analysis.json",
+        "sha256": "94504dc1d90af55795a38b608ed32567fa8ed9e7bc7ab2c74ccd16f2b0641a6b"
+      },
+      {
+        "name": "stations",
+        "path": "research_inputs/station_effects.csv",
+        "sha256": "41cea8fe8f551d8002c6efb3e595c4cac78c3a0741819bdf175e2a89fb54f8de"
+      }
+    ],
+    "note": "Operational statuses are prototype decision rules; route scores are reproduced research evidence."
+  },
+  "policy": {
+    "lowerScoreIsBetter": true,
+    "stable": "gap <= 0.001",
+    "watch": "gap > 0.001 and gap < 0.008 and relative gap < 35%",
+    "critical": "gap >= 0.008 or relative gap >= 35%"
+  },
+  "overview": {
+    "routes": 204,
+    "stations": 17,
+    "knownStationScore": 0.03180283629468099,
+    "coldStartScore": 0.038648816118574826,
+    "gap": 0.006845979823893837,
+    "relativeDegradation": 0.21526318471911968,
+    "degradedStations": 16,
+    "statusCounts": {
+      "stable": 2,
+      "watch": 7,
+      "critical": 8
+    }
+  },
+  "confirmation": {
+    "routes": 144,
+    "stations": 12,
+    "knownStationScore": 0.03544890415198718,
+    "coldStartScore": 0.04189914108576821,
+    "relativeDegradation": 0.18195871178769418,
+    "deltaCi95": [
+      0.004014241536925942,
+      0.008721161302695637
+    ],
+    "degradedStations": 11
+  },
+  "stations": [
+    {
+      "id": "DLA9",
+      "routes": 12,
+      "cohort": "pilot",
+      "knownStationScore": 0.03092162859718849,
+      "coldStartScore": 0.047925711897593044,
+      "gap": 0.01700408330040456,
+      "relativeGap": 0.5499090465743008,
+      "status": "critical"
+    },
+    {
+      "id": "DCH4",
+      "routes": 12,
+      "cohort": "confirmation",
+      "knownStationScore": 0.03946466127457084,
+      "coldStartScore": 0.05150293501685602,
+      "gap": 0.01203827374228518,
+      "relativeGap": 0.30503932767926917,
+      "status": "critical"
+    },
+    {
+      "id": "DBO2",
+      "routes": 12,
+      "cohort": "confirmation",
+      "knownStationScore": 0.030586022877417535,
+      "coldStartScore": 0.04237772958236874,
+      "gap": 0.011791706704951206,
+      "relativeGap": 0.3855259885278296,
+      "status": "critical"
+    },
+    {
+      "id": "DSE5",
+      "routes": 12,
+      "cohort": "confirmation",
+      "knownStationScore": 0.01339031027818171,
+      "coldStartScore": 0.024238610152399236,
+      "gap": 0.010848299874217524,
+      "relativeGap": 0.8101604554969752,
+      "status": "critical"
+    },
+    {
+      "id": "DLA5",
+      "routes": 12,
+      "cohort": "confirmation",
+      "knownStationScore": 0.028513963712344863,
+      "coldStartScore": 0.037457796624992996,
+      "gap": 0.008943832912648131,
+      "relativeGap": 0.3136650170027389,
+      "status": "critical"
+    },
+    {
+      "id": "DBO3",
+      "routes": 12,
+      "cohort": "confirmation",
+      "knownStationScore": 0.008250392555059773,
+      "coldStartScore": 0.01637505238989431,
+      "gap": 0.008124659834834536,
+      "relativeGap": 0.98476039541317,
+      "status": "critical"
+    },
+    {
+      "id": "DSE4",
+      "routes": 12,
+      "cohort": "pilot",
+      "knownStationScore": 0.015914725537315978,
+      "coldStartScore": 0.02400300066528177,
+      "gap": 0.008088275127965791,
+      "relativeGap": 0.5082258634621657,
+      "status": "critical"
+    },
+    {
+      "id": "DLA3",
+      "routes": 12,
+      "cohort": "pilot",
+      "knownStationScore": 0.017231557126061135,
+      "coldStartScore": 0.02503188561431062,
+      "gap": 0.007800328488249486,
+      "relativeGap": 0.45267693634327516,
+      "status": "critical"
+    },
+    {
+      "id": "DLA4",
+      "routes": 12,
+      "cohort": "confirmation",
+      "knownStationScore": 0.02239183018691768,
+      "coldStartScore": 0.029368708883209128,
+      "gap": 0.006976878696291446,
+      "relativeGap": 0.3115814401079039,
+      "status": "watch"
+    },
+    {
+      "id": "DCH3",
+      "routes": 12,
+      "cohort": "confirmation",
+      "knownStationScore": 0.03908502254963385,
+      "coldStartScore": 0.04600325792137771,
+      "gap": 0.006918235371743859,
+      "relativeGap": 0.1770047685902811,
+      "status": "watch"
+    },
+    {
+      "id": "DAU1",
+      "routes": 12,
+      "cohort": "confirmation",
+      "knownStationScore": 0.050359505342706216,
+      "coldStartScore": 0.05560386575050105,
+      "gap": 0.005244360407794836,
+      "relativeGap": 0.10413844163293394,
+      "status": "watch"
+    },
+    {
+      "id": "DCH1",
+      "routes": 12,
+      "cohort": "confirmation",
+      "knownStationScore": 0.025417852248209343,
+      "coldStartScore": 0.030133095740879107,
+      "gap": 0.004715243492669764,
+      "relativeGap": 0.18550912353351756,
+      "status": "watch"
+    },
+    {
+      "id": "DSE2",
+      "routes": 12,
+      "cohort": "confirmation",
+      "knownStationScore": 0.04195455331347068,
+      "coldStartScore": 0.04542951262039785,
+      "gap": 0.0034749593069271713,
+      "relativeGap": 0.08282675019713388,
+      "status": "watch"
+    },
+    {
+      "id": "DLA8",
+      "routes": 12,
+      "cohort": "pilot",
+      "knownStationScore": 0.01954738693262439,
+      "coldStartScore": 0.022689286796735916,
+      "gap": 0.003141899864111526,
+      "relativeGap": 0.16073247411231867,
+      "status": "watch"
+    },
+    {
+      "id": "DLA7",
+      "routes": 12,
+      "cohort": "pilot",
+      "knownStationScore": 0.03164606899254055,
+      "coldStartScore": 0.03459029601263194,
+      "gap": 0.0029442270200913923,
+      "relativeGap": 0.0930361057098558,
+      "status": "watch"
+    },
+    {
+      "id": "DCH2",
+      "routes": 12,
+      "cohort": "confirmation",
+      "knownStationScore": 0.07014272982340598,
+      "coldStartScore": 0.07037449925734983,
+      "gap": 0.00023176943394383401,
+      "relativeGap": 0.003304254546798301,
+      "status": "stable"
+    },
+    {
+      "id": "DBO1",
+      "routes": 12,
+      "cohort": "confirmation",
+      "knownStationScore": 0.05583000566192772,
+      "coldStartScore": 0.053924629088992586,
+      "gap": -0.0019053765729351412,
+      "relativeGap": -0.03412818161747884,
+      "status": "stable"
+    }
+  ]
+}
